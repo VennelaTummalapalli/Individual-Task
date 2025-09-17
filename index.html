@@ -1,88 +1,122 @@
-<html>
-    <head>
-        <title>
-            Movies,Songs,Videos,Sports,Facts
-        </title>
-        <center>
-        <h1 style="color:red;">Multimedia</h1>
-        <img src="Multi-media.png"> </center>
-        <link rel="icon" type="image/x-icon" href="multimedia.html">
-   <style>
-       .header{
-  margin-top: -25px;
-display: flex;
-}
-.nav {
-   padding: 12px;
-    background-color: white;
-   }
-.nav a{
-      padding: 12px 50px;
-      color: #f2f2f2;
-      text-decoration: none;
-      font-size: 17px;
-}
-.nav a:hover {
-  background-color: white;
-  color: black;
-}
-.signinbtn{
-   padding: 10px;
-}
-button{
-  font-weight: bold;
-  float: right;
-  margin: 65px 10px -5px 210px;
-  background-color:#e0367a;
-}
-input{
-  margin: 65px 10px -5px 65px;
-   width: 350px;
-  height: 40px;
-  border-radius: 25px;
-   border-block-color: black;
-   padding-left: 15px;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yummy Bites</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #fff8f0;
+        }
+
+        header {
+            background-color: #ff6347;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #ffa07a;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 5px black;
+            font-size: 2em;
+        }
+
+        .section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .food-card {
+            display: inline-block;
+            width: 250px;
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        .food-card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .food-card h3 {
+            margin: 10px 0;
+            color: #ff6347;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
     </style>
-    </head>
-    <body>
-    <div class="header">
-    <h1  style="color:blue; font-size: 42px;"> <img src="multimedia.html" height="60px" 
-    width="70px">  MULTIMEDIA </h1> <div class="search">
-    <form action="/search" method="get">
-      <input type="text" placeholder="Search for Movies, Songs, Videos & more" name="q">
-       <i class="fas fa-search search-icon"></i>
-    </form>
-       </div>
-   <nav class="nav">
-  <a class="visited" href="#home">Home</a>
-  <a href="movies.html">Movies</a>
-  <a href="songs.html">Songs</a>
-  <a href="videos.html">Videos</a>
-  <a href="#sports">Sports</a>
-  <a href="#facts">Facts</a>
-   </nav>
-    <div>
-        <h2>Recommended Movies</h2> 
+</head>
+<body>
 
-        <video width="210" height="260" controls poster="khaleja.jpg">
-         <source src="Khaleja.mp4.lnk" type="video/mp4"></video>
-        
-         <video width="210" height="300" controls poster="12thfail.jpg">
-         <source src="12thfail.mp4.lnk" type="video/mp4"></video>
-         
-         <video width="210" height="260" controls poster="goodachari.jpg">
-         <source src="Goodachari.mp4.lnk" type="video/mp4"></video>
-         
-         <video width="210" height="260" controls poster="businessman.jpg">
-         <source src="Businessman.mp4.lnk" type="video/mp4"></video>
+    <header>
+        <h1>Yummy Bites</h1>
+        <p>Delicious Food Delivered To You</p>
+    </header>
 
-         <video width="230" height="270"  controls poster="8vasanthalu.jpg">
-         <source src="8vasanthalu.mp4.lnk" type="video/mp4"></video>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">Order</a>
+        <a href="#">Contact</a>
+    </nav>
 
+    <div class="hero">
+        Fresh & Tasty Meals!
     </div>
 
+    <div class="section">
+        <h2>Our Specials</h2>
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1604908812038-03b4f8f4a34c" alt="Burger">
+            <h3>Cheesy Burger</h3>
+            <p>Juicy beef patty with melted cheese and fresh veggies.</p>
+        </div>
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1576618148400-b8f9e9e9f8f3" alt="Pizza">
+            <h3>Italian Pizza</h3>
+            <p>Wood-fired pizza with mozzarella and fresh basil.</p>
+        </div>
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1589308078052-4265d8e8aa4e" alt="Pasta">
+            <h3>Spaghetti Pasta</h3>
+            <p>Classic spaghetti with tomato sauce and parmesan.</p>
+        </div>
+    </div>
 
-    
+    <footer>
+        &copy; 2025 Yummy Bites. All rights reserved.
+    </footer>
 
-    </body>
+</body>
 </html>
